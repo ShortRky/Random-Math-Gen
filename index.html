@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Battle - Solo Leveling Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="topic-selection">
+        <h1>🔷 Select a Math Topic 🔷</h1>
+        <p>Choose what you want to learn and improve.</p>
+        <div id="topics">
+            <button onclick="selectTopic('Functions')">Functions</button>
+            <button onclick="selectTopic('Advanced Functions')">Advanced Functions</button>
+            <button onclick="selectTopic('Calculus')">Calculus</button>
+        </div>
+    </div>
+
+    <div class="container" id="overview-section" style="display: none;">
+        <h2 id="overview-title"></h2>
+        <p id="overview-text"></p>
+        <button onclick="startGame()">Start Quiz</button>
+    </div>
+
+    <div class="container" id="game-section" style="display: none;">
+        <header>
+            <h1>🔷 Math Battle System 🔷</h1>
+            <div id="rank">Rank: E</div>
+            <div id="score">Score: 0</div>
+        </header>
+
+        <div class="battle-panel">
+            <p id="question">Loading question...</p>
+            <input type="text" id="answer" placeholder="Enter your answer...">
+            <button onclick="submitAnswer()">Submit</button>
+        </div>
+
+        <div id="feedback"></div>
+
+        <section id="challenges">
+            <h2>🔥 Challenges 🔥</h2>
+            <ul id="challenge-list"></ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

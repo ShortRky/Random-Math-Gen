@@ -1,0 +1,32 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "user1",
+            "rank": "B",
+            "score": 50,
+            "totalPoints": 350,
+            "completedChallenges": [
+                "Solve 3 problems correctly in a row!",
+                "Reach Rank C!",
+                "Score 100 points!"
+            ],
+            "questionHistory": [
+                {
+                    "questionId": 101,
+                    "question": "If f(x) = 2x² + 3, what is f(4)?",
+                    "answer": 35,
+                    "userAnswer": 35,
+                    "correct": true
+                },
+                {
+                    "questionId": 102,
+                    "question": "Solve for x: 5x + 10 = 30",
+                    "answer": 4,
+                    "userAnswer": 4,
+                    "correct": true
+                }
+            ]
+        }
+    ]
+}
